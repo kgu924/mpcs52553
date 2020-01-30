@@ -6,6 +6,7 @@
 
 
                   <link rel="stylesheet" href="etsy_css.css" type="text/css" />
+                  <script src="https://kit.fontawesome.com/0e51ff9d8b.js" crossorigin="anonymous"></script>
 
   </head>
 
@@ -26,7 +27,8 @@
 
     .etsy-header{padding-top: 6px;
                   padding-left:12px;
-                  margin:0px;}
+                  margin:0px;
+                  display:flex;}
 
     .navspan{
 
@@ -42,7 +44,7 @@
       padding-right:42px;
       padding-top:9px;
       padding-bottom:9px;
-      width:491px;
+      width:100% ;
       height:28px;
       border-style: solid;
       border-bottom-width: 1px;
@@ -57,7 +59,6 @@
       border-bottom-right-radius: 0;
       border-right: 0;
       box-shadow: 1px 2px 4px 0 rgba(34, 34, 34, 0.1) inset;
-      flex: 1;
       border-width: 1px;
 
 
@@ -67,29 +68,61 @@
             justify-content: space-between;
     }
 
+  .menudiv{border-bottom:2px solid rgba(34,34,34,0.15);}
+
   .menuitems{margin-top: 4px;
             margin-right:12px;
-            list-style-type:none;}
+            list-style-type:none;
+            font-family: "system";
+            font-size:13px;
+          }
+
+  .search-icon{border-bottom-right-radius: 96px;
+                border-top-right-radius: 96px;
+                background-color:rgba(34,34,34,0.07);
+                border-style: solid;
+                border-bottom-width: 1px;
+      border-left-width: 10px;
+      border-top-width: 1px;
+      border-color:rgba(34,34,34,0.15);
+    box-shadow: 1px 2px 4px 0 rgba(34, 34, 34, 0.1) inset;
+      border-width: 1px;
+      padding-right: 21px;
+    padding-left: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: 48px;
+    width: 61px;
+    color: #222222;
+    font-weight: bold;
+    font-size: 16px;
+      }
 
 
   </style>
 
   <body>
     <header class="etsy-header">
-    <span class="etsy-logo">Etsy</span>
-    <span class="navspana">
-     <input type="text" placeholder="Search for items or shops" class="topnav">
-    </span>
+      <span class="etsy-logo">Etsy</span>
+      <input type="text" placeholder="Search for items or shops" class="topnav">
+      <button type="submit" class="search-icon" value="Search" aria-label="Search">
+            <i class="fas fa-search"></i>
+      </button>
 
     </header>
 
+    <div class="menudiv">
+
       <ul class="topmenu">
       <li class="menuitems">Jewelry & Accessories</li>
-      <li class="menuitems">Clothing Shoes</li>
-      <li class="menuitems">Home Living</li>
-      <li class="menuitems">Wedding Party</li>
-      <li class="menuitems">Toys Entertainment</li>
-      <li class="menuitems">Art Collectibles</li>
+      <li class="menuitems">Clothing & Shoes</li>
+      <li class="menuitems">Home & Living</li>
+      <li class="menuitems">Wedding & Party</li>
+      <li class="menuitems">Toys & Entertainment</li>
+      <li class="menuitems">Art & Collectibles</li>
+      <li class="menuitems">Craft Supplies</li>
+      <li class="menuitems">Vintage</li>
+      <li class="menuitems">Gifts</li>
 
       </ul>
 
@@ -98,5 +131,8 @@
     </div>
 
     <p class="etsy-logo">aaa</p>
+
+
+    <span class="etsy-icon wt-nudge-b-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18ZM10,4a6,6,0,1,0,6,6A6.007,6.007,0,0,0,10,4Z"/><path d="M21,22a1,1,0,0,1-.707-0.293l-4-4a1,1,0,0,1,1.414-1.414l4,4A1,1,0,0,1,21,22Z"/></svg></span>
   </body>
 </html>
