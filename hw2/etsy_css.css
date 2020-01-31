@@ -5,6 +5,12 @@
   src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
+  .etsy-header-laptop{
+    display:none;
+  }
+
+  .phone-screen-main-content{display:none;}
+
     .etsy-logo{color:#E55400;
                 font-size: 40px;
                 padding-right:6px;
@@ -227,3 +233,123 @@ ul{margin-top:0px;}
 				}
 
 .center-align {text-align: center;}
+
+
+
+@media only screen and (max-width: 600px){
+
+
+      .etsy-header{display:none;}
+      .menudiv{display:none;}
+      .large-screen-main-content{display:none;}
+
+
+    .etsy-logo-laptop{color:#E55400;
+                font-size: 20px;
+                padding-right:3px;
+                flex:3;
+              }
+
+    .etsy-header-laptop{padding-left:14px;
+      padding-right:14px;
+      padding-top:6px;
+      padding-bottom:6px;
+                  margin:0px;
+                  display:flex;}
+
+  .sign_in-laptop{font-size: 5px;
+    padding:0px;
+  font-family: "system";
+  font-size: 20px;
+  text-align: right;
+flex:1;
+}
+
+  .shopping-cart-mystyles-laptop{
+      padding:0px;
+    flex:1;
+    text-align: right;
+    padding-right:4px;
+    }
+
+
+        .topnav-laptop{    padding-left: 18px;
+      padding-right:42px;
+      padding-top:9px;
+      padding-bottom:9px;
+      width:100% ;
+      height:28px;
+      border-style: solid;
+      border-bottom-width: 1px;
+      border-left-width: 1px;
+      border-top-width: 1px;
+      border-color:rgba(34,34,34,0.15);
+      font-size:16px;
+      background-color:rgba(34,34,34,0.07);
+      border-top-left-radius: 96px;
+      border-bottom-left-radius: 96px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-right: 0;
+      box-shadow: 1px 2px 4px 0 rgba(34, 34, 34, 0.1) inset;
+      border-width: 1px;
+    }
+
+        .search-icon-laptop{border-bottom-right-radius: 96px;
+                border-top-right-radius: 96px;
+                background-color:rgba(34,34,34,0.07);
+                border-style: solid;
+                border-bottom-width: 1px;
+      border-left-width: 10px;
+      border-top-width: 1px;
+      border-color:rgba(34,34,34,0.15);
+    box-shadow: 1px 2px 4px 0 rgba(34, 34, 34, 0.1) inset;
+      border-width: 1px;
+      padding-right: 21px;
+    padding-left: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: 48px;
+    width: 61px;
+    color: #222222;
+    font-weight: bold;
+    font-size: 16px;
+      }
+
+      .phone-screen-main-content{display: block}
+
+
+        .etsy-motto {margin:auto;
+         font-family: "system";
+         font-size:28px;
+         font-weight: 300;
+         padding-top:30px;
+         padding-left:12px;
+         padding-right:12px;
+         padding-bottom:12px;
+        }
+
+        .larger-text {font-size: 18px;
+        }
+
+        .phone-content{display: flex;background-color: pink}
+        .phone-img{max-width:100%;
+                  }
+
+          .phone-third-box{display:flex;}
+
+          .phone-second-box{margin-left:10px;
+                  margin-right:10px;
+                  height:70px}
+
+          .phone-first-box{margin-left:10px;
+                  margin-right:10px;
+                  margin-bottom:0px;}
+
+  }
+
+
+}
+
+
+
