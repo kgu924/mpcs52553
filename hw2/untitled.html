@@ -11,6 +11,25 @@
 
 .boxes{background-color:red;
 	margin:10px;
+	flex-grow:1;
+}
+
+.subcontainer{display:flex;
+	flex-direction: column
+}
+
+.subcontainer2{display:flex;
+
+}
+
+.box2{background-color: orange;
+	margin:10px;
+	flex-grow:1;
+}
+
+.box2{background-color: green;
+	margin:10px;
+	flex-grow:1;
 }
 	
 
@@ -20,9 +39,20 @@
 
 	<div class="main-container">
 
-		<div class="boxes">asd</div>
-		<div class="boxes">asd</div>
-		<div class="boxes">asd</div>
+		<div class="boxes">
+			<div class="subcontainer2">
+				<div class="box3">qwe</div>
+				<div  class="box3">dsa</div>
+			</div>
+		</div>
+
+		<div class="boxes">
+			<div class="subcontainer">
+				<div class="box2">qwe</div>
+				<div  class="box2">dsa</div>
+			</div>
+
+		</div>
 		
 
 
