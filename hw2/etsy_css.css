@@ -336,7 +336,9 @@ flex:1;
         .phone-img{max-width:100%;
                   }
 
-          .phone-third-box{display:flex;}
+          .phone-third-box{
+          margin-left:10px;
+                  margin-right:10px;}
 
           .phone-second-box{margin-left:10px;
                   margin-right:10px;
