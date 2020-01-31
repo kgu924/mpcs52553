@@ -1,1 +1,229 @@
-.text-orange{color:#E55400;}
+  @font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+    .etsy-logo{color:#E55400;
+                font-size: 40px;
+                padding-right:6px;
+              }
+
+    .etsy-header{padding-left:36px;
+			padding-right:36px;
+			padding-top:12px;
+			padding-bottom:12px;
+                  margin:0px;
+                  display:flex;}
+
+    .navspan{
+
+      align-items: center;
+      background-color:rgba(34,34,34,0.07);
+      width:613px;
+      height:48px;
+      padding:0px;
+      margin:0px;
+    }
+
+    .topnav{    padding-left: 18px;
+      padding-right:42px;
+      padding-top:9px;
+      padding-bottom:9px;
+      width:100% ;
+      height:28px;
+      border-style: solid;
+      border-bottom-width: 1px;
+      border-left-width: 1px;
+      border-top-width: 1px;
+      border-color:rgba(34,34,34,0.15);
+      font-size:16px;
+      background-color:rgba(34,34,34,0.07);
+      border-top-left-radius: 96px;
+      border-bottom-left-radius: 96px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-right: 0;
+      box-shadow: 1px 2px 4px 0 rgba(34, 34, 34, 0.1) inset;
+      border-width: 1px;
+
+
+  }
+
+  .topmenu{display:flex;
+            justify-content: space-between;
+    }
+
+  .menudiv{border-bottom:2px solid rgba(34,34,34,0.15);}
+
+  .menuitems{margin-top: 4px;
+            margin-right:12px;
+            list-style-type:none;
+            font-family: "system";
+            font-size:13px;
+          }
+
+  .search-icon{border-bottom-right-radius: 96px;
+                border-top-right-radius: 96px;
+                background-color:rgba(34,34,34,0.07);
+                border-style: solid;
+                border-bottom-width: 1px;
+      border-left-width: 10px;
+      border-top-width: 1px;
+      border-color:rgba(34,34,34,0.15);
+    box-shadow: 1px 2px 4px 0 rgba(34, 34, 34, 0.1) inset;
+      border-width: 1px;
+      padding-right: 21px;
+    padding-left: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    height: 48px;
+    width: 61px;
+    color: #222222;
+    font-weight: bold;
+    font-size: 16px;
+      }
+    .sign_in{font-size: 13px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
+	font-family: "system"}
+
+    .shopping-cart-mystyles{
+      padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 15px;
+    padding-right: 15px
+    }
+    .cart-align-center{text-align: center}
+
+    .picture-content{display: flex
+              }
+
+    .left-image{height:320px;
+              width:100%;
+              object-fit: cover;
+              box-sizing: border-box;
+              margin:0;
+              flex-basis:67%;}
+
+    .right-image{height: 100%;
+                  width:100%;
+                }
+
+    .custom-made-text{font-size: 26px;
+                      font-family: "system"}
+
+/*div{margin:0px;padding:0px;}
+*/
+.container {display:flex;
+padding-top: 18px;
+padding-left:18px;
+padding-right: 18px
+
+}
+.left-side-left-child{background-color: pink;
+	display:flex;
+	height: 320px;
+	margin-left:18px;
+	flex:1;
+	      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+}
+.content{margin:auto;
+		font-family:"system";}
+
+.right-side{
+
+			display:flex;
+			flex-direction: column;
+			margin-right:18px;
+			border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+			}
+
+.img2 {
+	margin:0px;
+	padding:0px;
+	height: 320px;
+   border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;}
+
+.img3 {
+	margin:0px;
+	padding:0px;
+	height: 220px;
+	border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;}	
+
+	.etsy-motto {margin:auto;
+				 font-family: "system";
+				 font-size:32px;
+				 font-weight: 300;
+				 padding-top:30px;
+				 padding-left:12px;
+				 padding-right:12px;
+				 padding-bottom:12px;
+				}
+	.etsy-motto-container {display: flex;}
+
+	.left-side-right-child {padding-right: 18px;flex:1;}
+
+	.pink-box {
+		background-color:pink;
+		height: 80px;
+		display: flex;
+		margin-top: 18px;
+			border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+}
+
+body {margin:0px;padding:0px;}
+
+ul{margin-top:0px;}
+
+.bottom-1 {
+	padding-left: 18px
+	padding-right: 18px
+}
+.bottom-2 {
+	padding-left: 18px
+	padding-right: 18px
+}
+.bottom-3 {
+	padding-left: 18px
+	padding-right: 18px
+}
+
+
+.bottom-3 {
+	padding-right: 18px
+}
+
+.content-bottom {
+	margin-left:20px;
+	margin-right:20px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.next-to-check{
+	font-size:16px;
+}
+
+.text-right-of-check {
+	padding-left: 12px
+}
+.text-orange {color: orange;}
+
+.larger-text {font-size: 26px;
+				padding-bottom: 10px;
+				}
+
+.center-align {text-align: center;}
