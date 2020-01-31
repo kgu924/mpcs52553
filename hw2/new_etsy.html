@@ -97,6 +97,46 @@
     font-weight: bold;
     font-size: 16px;
       }
+    .sign_in{font-size: 13px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 15px;
+    padding-right: 15px}
+
+    .shopping-cart-mystyles{
+      padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 15px;
+    padding-right: 15px
+    }
+    .cart-align-center{text-align: center}
+
+    .picture-content{display: flex
+              }
+
+    .left-image{height:320px;
+              width:100%;
+              object-fit: cover;
+              box-sizing: border-box;
+              margin:0;
+              flex-basis:67%;}
+
+    .right-image{height: 100%;
+                  width:100%;
+                }
+
+    .custom-made-text{font-size: 26px;
+                      font-family: "system"}
+
+
+.container {
+  flex-basis:33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side-container{display:flex;}
 
 
   </style>
@@ -106,8 +146,10 @@
       <span class="etsy-logo">Etsy</span>
       <input type="text" placeholder="Search for items or shops" class="topnav">
       <button type="submit" class="search-icon" value="Search" aria-label="Search">
-            <i class="fas fa-search"></i>
+        <i class="fas fa-search"></i>
       </button>
+      <span class="sign_in">Sign in</span>
+      <span class="shopping-cart-mystyles"><i class="fas fa-shopping-cart cart-align-center"></i></span>
 
     </header>
 
@@ -130,8 +172,22 @@
 
     </div>
 
-    <p class="etsy-logo">aaa</p>
+    <div class="picture-content">
+      <div class="left-side-container">
+        <div class="container">
+          <div>
+            <h2 class="custom-made-text">Custom-made and Cupid approved</h2>
+            <p>Shop Valentine's Day ></p>
+          </div>
+        </div>
+        <span><img src="etsy2.jpg" class="left-image"></span>
+      </div>
+      <div>
+           <div><img src="etsy3.jpg" class="right-image"></div>
+            <div class="container">Ships for free? Yes!</div>
+      </div>
 
+    </div>
 
     <span class="etsy-icon wt-nudge-b-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18ZM10,4a6,6,0,1,0,6,6A6.007,6.007,0,0,0,10,4Z"/><path d="M21,22a1,1,0,0,1-.707-0.293l-4-4a1,1,0,0,1,1.414-1.414l4,4A1,1,0,0,1,21,22Z"/></svg></span>
   </body>
