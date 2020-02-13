@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
 	for (heart of document.querySelectorAll(".fave")) {
 		heart.addEventListener("click", add_to_favorite)
 	}
+
+	document.querySelector("select").addEventListener("change",show_selection)
 })
 
 
@@ -36,11 +38,30 @@ function add_to_favorite() {
 		}
 	}
 
+}
 
 
+function show_selection(event) {
+	console.log(event.target.value)
+	rows = document.querySelectorAll("#stations tr")
+	for (row of rows){
+		row.style.display="none"
+	}
 
+	if (event.target.value == "all"){
+		rows = document.querySelectorAll("tr")
+		for (row of rows){
+			row.style.display="table-row"
+		}
+	}
+	 else {
+	 	rows = document.querySelectorAll("." + event.target.value)
 
+		for (row of rows){
+			row.style.display="table-row"
+		}
 
+	} 
 }
 
 
