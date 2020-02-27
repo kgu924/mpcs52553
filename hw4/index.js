@@ -1,6 +1,6 @@
 
 
-function add_element(name,distance) {
+function add_element(name,distance,jpl_link,approach_date) {
     const wall = document.querySelector("#wall");
     let item = document.createElement("div")
     item.classList.add("col-3")
@@ -25,19 +25,33 @@ function add_element(name,distance) {
     cardbody.classList.add("card-body")
     let cardtitle = document.createElement("h5")
     cardtitle.classList.add("card-title")
-    let cardtext = document.createElement("p")
+    let cardsubtitle = document.createElement("h6")
+    cardsubtitle.classList.add("card-subtitle")
+    cardsubtitle.classList.add("mb2")
+    cardsubtitle.classList.add("text-muted")
+    let cardtext = document.createElement("h6")
     cardtext.classList.add("card-text")
-    // let cardlink = document.createElement("a")
-    // cardlink.classList.add("card-link")
+    cardtext.classList.add("mb2")
+    cardtext.classList.add("text-muted")
+    let cardlink = document.createElement("a")
+    cardlink.classList.add("card-link")
+    cardlink.href = jpl_link
 
     let text_elem = document.createTextNode(name)
     let text_elem2 = document.createTextNode("Distance: " + distance)
+    let text_approach = document.createTextNode("Approach date: " + approach_date)
+    let link_test = document.createTextNode("More info")
 
     cardtitle.appendChild(text_elem)
+    cardsubtitle.appendChild(text_approach)
     cardtext.appendChild(text_elem2)
+    cardlink.appendChild(link_test)
 
     cardbody.appendChild(cardtitle)
+    cardbody.appendChild(cardsubtitle)
     cardbody.appendChild(cardtext)
+    cardbody.appendChild(cardlink)
+
 
     card.appendChild(cardbody)
 
@@ -64,7 +78,7 @@ function create_name_distance_array(all_asteroids){
   let myarray=[]
   for (const [key, value] of Object.entries(all_asteroids)) {
     for (asteroid of value) {
-      myarray.push([asteroid.name,asteroid.close_approach_data[0].miss_distance.astronomical])
+      myarray.push([asteroid.name,asteroid.close_approach_data[0].miss_distance.astronomical,asteroid.nasa_jpl_url,asteroid.close_approach_data[0].close_approach_date])
 
     }
   }
@@ -91,7 +105,7 @@ async function getData() {
   // console.log(name_distance_array)
 
   for (i of name_distance_array) {
-    add_element(i[0],i[1])
+    add_element(i[0],i[1],i[2],i[3])
   }
 
 
