@@ -96,11 +96,33 @@ async function buy_or_sell(event){
         buy_stock(event)
     }
     else if (document.activeElement.innerText == "Sell") {
-        console.log("yarraq")
+        sell_stock(event)
     }
     else {
        return false 
     }
+}
+
+async function sell_stock(event) {
+    event.preventDefault();
+
+    var stock_name = document.querySelector("#stock-name").value.toUpperCase();
+    var stock_quantity = parseInt(document.querySelector("#stock-quantity").value);
+
+    for (stock of stock_array) {
+        if (stock[0] == stock_name) {
+            stock[1] = stock[1] - stock_quantity
+       
+        }
+    }
+    stock_array = await update_stock_array(stock_array)
+    const stock_table = document.querySelector("tbody")
+    stock_table.innerHTML = ''
+
+    for (stock of stock_array) {
+        add_element(stock[0],stock[1],stock[2])
+     
+    } 
 }
 
 async function buy_stock(event) {
