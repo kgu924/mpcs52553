@@ -31,10 +31,34 @@
     	</div>
     	<div class="row">
 	    	<div class="col-sm-3">
-	    		<input type="text" name="myinput">
+	    		<form name="buy_form">
+            <div class="form-group">
+              <label for="stockName">Stock Ticker</label>
+              <input type="text" class="form-text" placeholder="Enter stock ticker" name="stockName" id="stock-name">
+            </div>
+            <div class="form-group">
+              <label for="stockQuantity">Quantity</label>
+              <input type="text" class="form-text" placeholder="Enter how many to purchase" name="stockQuantity" id="stock-quantity">
+            </div>
+            <button type="submit" class="btn btn-primary" value="buy">Buy</button>
+            <button type="submit" class="btn btn-primary" value="sell">Sell</button>
+        </form>
 	    	</div>
 	     	<div id="portfolio" class="col-sm-9">
           <div id="stocks" class="row">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th id="tickerCol" scope="col">Stock Ticker</th>
+                  <th id="tickerQuantity" scope="col">Quantity</th>
+                  <th id="tickerPrice" scope="col">Price</th>
+                  <th id="tickerValue" scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
 <!--             <div class="col-3">
     	     		<div class="card">
       				  <div class="card-body">
