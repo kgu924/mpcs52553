@@ -4,8 +4,23 @@ document.addEventListener("DOMContentLoaded", function() {
   document.querySelector("input").addEventListener("change",add_element)
 })
 
-function add_element(e) {
-    stock_name = this.value
+
+
+async function getPrice(stock_ticker) {
+  let myapikey = "sk_629a4c50ec714bcaa17d87c45546dd80"
+  let quote_url = `https://cloud.iexapis.com/stable/stock/${stock_ticker}/quote?token=${myapikey}`
+
+  let http_response = await fetch(quote_url)
+  let stock_data = await http_response.json()
+
+  let price = stock_data.latestPrice 
+
+  return price;
+
+}
+
+async function add_element(e) {
+    let stock_name = this.value
     const wall = document.querySelector("#stocks");
     let item = document.createElement("div")
     item.classList.add("col-3")
@@ -20,7 +35,8 @@ function add_element(e) {
     cardtext.classList.add("card-text")
 
     let stock_title = document.createTextNode(stock_name)
-    let stock_info = document.createTextNode("Price: " + 10 + "\nQuantity:" + 5)
+    let stock_price = await getPrice(stock_name)
+    let stock_info = document.createTextNode("Price: " + stock_price + "\nQuantity:" + 10)
 
     cardtitle.appendChild(stock_title)
     cardtext.appendChild(stock_info)
