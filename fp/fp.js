@@ -242,6 +242,9 @@ function sort_table() {
 
 async function load_page(){
     stock_array = JSON.parse(localStorage.getItem("stock_array"))
+    if (stock_array == null) {
+        stock_array=[]
+        return}
     if (stock_array.length==0) {return}
     stock_array = await update_stock_array(stock_array)
 
